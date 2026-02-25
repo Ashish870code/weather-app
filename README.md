@@ -59,8 +59,6 @@ weather-app/
 │ ├── index.js
 │ └── App.css
 ├── screenshots
-│ ├── home.png
-│ └── search.png
 ├── .env
 ├── .gitignore
 ├── package.json
@@ -119,4 +117,5 @@ Ashish Kumar Singh
 GitHub: https://github.com/Ashish870code
 
 Live-Site: https://react-site-weather.netlify.app/
+
 
