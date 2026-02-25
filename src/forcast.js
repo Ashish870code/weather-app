@@ -9,27 +9,26 @@ function Forcast(props) {
   const [weather, setWeather] = useState({});
 
   const search = (city) => {
-    axios
-      .get(
-        `${apiKeys.base}weather?q=${
-          city != "[object Object]" ? city : query
-        }&units=metric&APPID=${apiKeys.key}`
-      )
-      .then((response) => {
-        setWeather(response.data);
-        setQuery("");
+  const cityName = city && typeof city === "string" ? city : query;
 
-        if (props.onCityChange) {
+  if (!cityName) return; // agar kuch type nahi kiya
+
+  axios
+    .get(`${apiKeys.base}weather?q=${cityName}&units=metric&APPID=${apiKeys.key}`)
+    .then((response) => {
+      setWeather(response.data);
+      setQuery("");
+
+      if (props.onCityChange) {
         props.onCityChange(response.data.name);
       }
-      })
-      .catch(function (error) {
-        console.log(error);
-        setWeather("");
-        setQuery("");
-        setError({ message: "Not Found", query: query });
-      });
-  };
+    })
+    .catch((error) => {
+      console.log(error);
+      setWeather({});
+      setError({ message: "Not Found", query: cityName });
+    });
+};
 
   const defaults = {
     color: "white",
@@ -38,8 +37,9 @@ function Forcast(props) {
   };
   
   useEffect(() => {
-    search("Delhi");
-  }, []);
+  search("Delhi");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   return (
     <div className="forecast">

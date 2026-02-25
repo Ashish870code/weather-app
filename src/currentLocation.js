@@ -86,7 +86,6 @@ class Weather extends React.Component {
 
   getCityImage = async (city) => {
   try {
-    const query = `${city} famous landmark OR scenery OR skyline`;
     const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
 
     const response = await fetch(
