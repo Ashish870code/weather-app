@@ -13,11 +13,11 @@ Live Demo: [https://react-site-weather.netlify.app/]
 
 Below are a few screenshots from the live deployed app:
 
-![Home Screen](Screenshots/Screenshot1.png)
+![Home Screen](screenshots/Screenshot1.png)
 
-![Search Weather](Screenshots/Screenshot2.png)
+![Search Weather](screenshots/Screenshot2.png)
 
-![Search Weather](Screenshots/Screenshot3.png)
+![Search Weather](screenshots/Screenshot3.png)
 
 ---
 
@@ -119,3 +119,4 @@ Ashish Kumar Singh
 GitHub: https://github.com/Ashish870code
 
 Live-Site: https://react-site-weather.netlify.app/
+
