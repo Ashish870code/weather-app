@@ -98,8 +98,8 @@ Connect GitHub repo to Netlify.
 
 Add Environment Variables:
 
-    REACT_APP_WEATHER_KEY=your_weather_api_key
-    REACT_APP_UNSPLASH_KEY=your_unsplash_api_key
+    REACT_APP_WEATHER_KEY=your_weather_api_key <p>
+    REACT_APP_UNSPLASH_KEY=your_unsplash_api_key<p>
     CI=false
 
 
@@ -117,6 +117,7 @@ Deploy
 GitHub: [https://github.com/Ashish870code]
 
 Live-Site: [https://react-site-weather.netlify.app/]
+
 
 
 
