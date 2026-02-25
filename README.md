@@ -71,7 +71,7 @@ weather-app/
 
  Clone repo:
 
-```bash
+```bash```
 git clone https://github.com/Ashish870code/weather-app.git
 cd weather-app
 
@@ -113,9 +113,10 @@ Deploy
 
 ## 👨‍💻 Author
 
-Ashish Kumar Singh
-GitHub: https://github.com/Ashish870code
+   <b>Ashish Kumar Singh</b><p>
+GitHub: [https://github.com/Ashish870code]
 
-Live-Site: https://react-site-weather.netlify.app/
+Live-Site: [https://react-site-weather.netlify.app/]
+
 
 
